@@ -12,7 +12,7 @@ class HashMap:
     return hash_code % self.array_size
 
   def assign(self, key, value):
-    c
+    array_index = self.compressor(self.hash(key))
     current_array_value = self.array[array_index]
 
     if current_array_value is None:
